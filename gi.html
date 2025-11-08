@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gi Noa | Photography & Poetry</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .portfolio-header {
+            text-align: center;
+            padding: 6rem 0 3rem;
+            position: relative;
+        }
+        
+        .back-btn {
+            position: absolute;
+            left: 0;
+            top: 2rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+        }
+        
+        .back-btn:hover {
+            color: var(--text);
+            transform: translateX(-5px);
+        }
+        
+        .member-image {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 2rem;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid var(--accent);
+        }
+        
+        .member-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0 4rem;
+        }
+        
+        .portfolio-item {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        .portfolio-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .portfolio-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .portfolio-content h3 {
+            color: var(--accent);
+            margin-bottom: 0.75rem;
+            font-size: 1.5rem;
+        }
+        
+        .portfolio-content p {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+        
+        .portfolio-date {
+            color: var(--accent);
+            font-size: 0.9rem;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: auto;
+        }
+        
+        @media (max-width: 768px) {
+            .portfolio-header {
+                padding-top: 5rem;
+            }
+            
+            .back-btn {
+                top: 1.5rem;
+            }
+            
+            .member-image {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Poetry & Prose</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#poems">Poems</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="portfolio-header">
+            <a href="index.html#about" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back
+            </a>
+            
+            <div class="member-image">
+                <img src="https://via.placeholder.com/400" alt="Gi Noa">
+            </div>
+            
+            <h1>Gi Noa</h1>
+            <p class="member-info">Photographer & Poet | 28 years | Hungary</p>
+            <p class="member-bio">My photographs and poems are about the beauty of moments and the depth of emotions. Behind every image lies a story, in every line an emotion.</p>
+        </section>
+        
+        <h2 style="text-align: center; margin-bottom: 2rem;">My Works</h2>
+        
+        <div class="portfolio-grid">
+            <!-- Portfolio Item 1 -->
+            <div class="portfolio-item">
+                <img src="https://source.unsplash.com/random/600x400?portrait" alt="Portrait" class="portfolio-image">
+                <div class="portfolio-content">
+                    <h3>Commitment</h3>
+                    <p>A moment that lasts forever. The play of light and shadow that evokes deep emotions.</p>
+                    <span class="portfolio-date">2023. May</span>
+                </div>
+            </div>
+            
+            <!-- Portfolio Item 2 -->
+            <div class="portfolio-item">
+                <img src="https://source.unsplash.com/random/600x400?nature" alt="Nature" class="portfolio-image">
+                <div class="portfolio-content">
+                    <h3>Poetry of Nature</h3>
+                    <p>The rhythm and harmony of nature are reflected in both the poems and the images.</p>
+                    <span class="portfolio-date">2023. April</span>
+                </div>
+            </div>
+            
+            <!-- Portfolio Item 3 -->
+            <div class="portfolio-item">
+                <img src="https://source.unsplash.com/random/600x400?city" alt="City Life" class="portfolio-image">
+                <div class="portfolio-content">
+                    <h3>Urban Rhythms</h3>
+                    <p>The colors, sounds, and pulse of the city through our poems and photos.</p>
+                    <span class="portfolio-date">2023. March</span>
+                </div>
+            </div>
+            
+            <!-- Portfolio Item 4 -->
+            <div class="portfolio-item">
+                <img src="https://source.unsplash.com/random/600x400?abstract" alt="Abstract Art" class="portfolio-image">
+                <div class="portfolio-content">
+                    <h3>World of Imagination</h3>
+                    <p>Where abstract art and poetry meet, giving new meanings to forms and words.</p>
+                    <span class="portfolio-date">2023. February</span>
+                </div>
+            </div>
+            
+            <!-- Portfolio Item 5 -->
+            <div class="portfolio-item">
+                <img src="https://source.unsplash.com/random/600x400?people" alt="Portraits" class="portfolio-image">
+                <div class="portfolio-content">
+                    <h3>Soul Portraits</h3>
+                    <p>Capturing the stories and emotions hidden behind human faces.</p>
+                    <span class="portfolio-date">2023. January</span>
+                </div>
+            </div>
+            
+            <!-- Portfolio Item 6 -->
+            <div class="portfolio-item">
+                <img src="https://source.unsplash.com/random/600x400?poetry" alt="Poetry" class="portfolio-image">
+                <div class="portfolio-content">
+                    <h3>Poems and Images</h3>
+                    <p>The perfect harmony of poetry and photography, where words and images reinforce each other.</p>
+                    <span class="portfolio-date">2022. December</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Gi Noa | All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poetry & Prose | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Poetry & Prose</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#poems">Poems</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Whispers of the Soul</h1>
+                <p>Discover the beauty of words and emotions</p>
+            </div>
+        </section>
+
+        <section class="container" id="poems">
+            <br>
+            <h2>Latest Poems</h2>
+            <div class="articles-grid" id="articlesContainer">
+                <!-- Articles will be loaded here by JavaScript -->
+            </div>
+            <div class="pagination" id="pagination">
+                <!-- Pagination will be added here by JavaScript -->
+            </div>
+        </section>
+
+        <section class="container" id="about">
+            <h2>About Us</h2>
+            <div class="team-container">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/me.jpg" alt="Team Member 1">
+                    </div>
+                    <h3>Hyowon</h3>
+                    <p class="member-info">40 years | South Korea</p>
+                    <p class="member-bio">Passionate poet with a love for nature and human emotions. Writing has been my escape and my voice since childhood.</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://via.placeholder.com/200" alt="Team Member 2">
+                    </div>
+                    <h3>Gi Noa</h3>
+                    <p class="member-info"> years | Hungary</p>
+                    <p class="member-bio">Hungarian photographer who captures the beauty of life through her thinkings and photography.</p>
+                    <a href="gi.html" class="btn btn-outline" style="color: var(--accent); border-color: var(--accent); padding: 0.5rem 1.5rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease; margin-top: 1rem; display: inline-block;">Her Works</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Poetry & Prose. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
