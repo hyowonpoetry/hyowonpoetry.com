@@ -71,7 +71,7 @@ For you are wind and I am flame
 we move, we change, yet stay the same  
 your light becomes the breath I take  
 your soul the mirror I awake`,
-    author: "Hyowon",
+    author: "H",
     date: "2025-10-15",
     image: "https://source.unsplash.com/random/600x400/?poetry,nature"
   },
@@ -208,7 +208,7 @@ And when I opened my eyes
 the world was the same  
 but it had changed  
 because I had`,
-    author: "Hyowon",
+    author: "H",
     date: "2025-10-10",
     image: "https://source.unsplash.com/random/600x400/?midnight,sky"
   },
@@ -263,7 +263,7 @@ Even my hands
 And in that touch I hear  
 What cannot be said  
 Only lived`,
-    author: "Hyowon",
+    author: "H",
     date: "2025-10-05",
     image: "https://source.unsplash.com/random/600x400/?autumn,leaves"
   },
@@ -352,7 +352,7 @@ revealing not bravery but emptiness
 not strength but decay  
 not eternity but a fleeting spark  
 lost in the night`,
-    author: "Hyowon",
+    author: "H",
     date: "2025-10-01",
     image: "https://source.unsplash.com/random/600x400/?flame,dark"
   },
@@ -441,7 +441,7 @@ waiting for the light to admit its secret
 I know then that my words are not alone  
 They have found a reflection in you  
 and that is why they live`,
-    author: "Hyowon",
+    author: "H",
     date: "2025-09-24",
     image: "https://source.unsplash.com/random/600x400/?reflection,water"
   },
@@ -470,7 +470,7 @@ Here every color has a thousand shades
 Here I am both myself and more than myself  
 And joy is no longer a visitor  
 It is the home I had always sought`,
-    author: "Hyowon",
+    author: "H",
     date: "2025-09-18",
     image: "https://source.unsplash.com/random/600x400/?heaven,light"
   },
@@ -528,11 +528,12 @@ Every breath an echo that no one answers
 I walk in a valley of absence  
 Where memory becomes a chain  
 And grief a crown without light`,
-    author: "Hyowon",
+    author: "H",
     date: "2025-09-18",
     image: "https://source.unsplash.com/random/600x400/?darkness,abyss"
   }
 ];
+
 
 
 // Pagination settings
@@ -547,6 +548,7 @@ const paginationContainer = document.getElementById('pagination');
 document.addEventListener('DOMContentLoaded', () => {
     displayArticles();
     setupPagination();
+    setupArtTabs();
 });
 
 // Display articles with pagination

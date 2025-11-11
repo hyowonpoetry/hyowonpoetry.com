@@ -5,123 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gi Noa | Photography</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gistyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        .portfolio-header {
-            text-align: center;
-            padding: 6rem 0 3rem;
-            position: relative;
-        }
-        
-        .back-btn {
-            position: absolute;
-            left: 0;
-            top: 2rem;
-            color: var(--accent);
-            text-decoration: none;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            transition: var(--transition);
-        }
-        
-        .back-btn:hover {
-            color: var(--text);
-            transform: translateX(-5px);
-        }
-        
-        .member-image {
-            width: 200px;
-            height: 200px;
-            margin: 0 auto 2rem;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 4px solid var(--accent);
-        }
-        
-        .member-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 2rem;
-            padding: 2rem 0 4rem;
-        }
-        
-        .portfolio-item {
-            background: var(--card-bg);
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .portfolio-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-        }
-        
-        .portfolio-image {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-bottom: 1px solid var(--border);
-        }
-        
-        .portfolio-content {
-            padding: 1.5rem;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .portfolio-content h3 {
-            color: var(--accent);
-            margin-bottom: 0.75rem;
-            font-size: 1.5rem;
-        }
-        
-        .portfolio-content p {
-            color: var(--text-light);
-            margin-bottom: 1.5rem;
-            flex-grow: 1;
-        }
-        
-        .portfolio-date {
-            color: var(--accent);
-            font-size: 0.9rem;
-            font-family: 'Montserrat', sans-serif;
-            margin-top: auto;
-        }
-        
-        @media (max-width: 768px) {
-            .portfolio-header {
-                padding-top: 5rem;
-            }
-            
-            .back-btn {
-                top: 1.5rem;
-            }
-            
-            .member-image {
-                width: 150px;
-                height: 150px;
-            }
-            
-            .portfolio-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -131,7 +17,8 @@
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index.html#poems">Poems</a></li>
-                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="gi.html">Art</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
                 </ul>
             </nav>
         </div>
@@ -148,70 +35,83 @@
             </div>
             
             <h1>Gi Noa</h1>
-            <p class="member-info">Photographer & Poet | &#8734; years | Hungary</p>
+            <p class="member-info">Photographer & Poet | years &#8734; | Hungary</p>
             <p class="member-bio"></p>
         </section>
         
-        <h2 style="text-align: center; margin-bottom: 2rem;">My Works</h2>
+        <div class="art-categories">
+            <h2>Art</h2>
+            <div class="art-tabs">
+                <button class="tab-btn active" data-tab="people">People</button>
+                <button class="tab-btn" data-tab="reflections">Reflections</button>
+                <button class="tab-btn" data-tab="nature">Nature</button>
+            </div>
+        </div>
         
         <div class="portfolio-grid">
-            <!-- Portfolio Item 1 -->
-            <div class="portfolio-item">
-                <img src="images/gi1.jpg" alt="Portrait" class="portfolio-image">
+            <!-- People -->
+            <div class="portfolio-item people">
+                <img src="images/gip1.jpg" alt="Portrait" class="portfolio-image">
                 <div class="portfolio-content">
                     <h3>Commitment</h3>
                     <p>A moment that lasts forever. The play of light and shadow that evokes deep emotions.</p>
-                    <span class="portfolio-date">2023. May</span>
+                    <span class="portfolio-date"><span class="by-author">G</span></span>
                 </div>
             </div>
             
-            <!-- Portfolio Item 2 -->
-            <div class="portfolio-item">
-                <img src="https://source.unsplash.com/random/600x400?nature" alt="Nature" class="portfolio-image">
+            <div class="portfolio-item people">
+                <img src="images/gip2.jpg" alt="Nature" class="portfolio-image">
                 <div class="portfolio-content">
-                    <h3>Poetry of Nature</h3>
-                    <p>The rhythm and harmony of nature are reflected in both the poems and the images.</p>
-                    <span class="portfolio-date">2023. April</span>
+                    <h3>Önarckép</h3>
+                    <p>Vendégjáték a velencei San Marco téren</p>
+                    <span class="portfolio-date"><span class="by-author">G</span></span>
                 </div>
             </div>
             
-            <!-- Portfolio Item 3 -->
-            <div class="portfolio-item">
-                <img src="https://source.unsplash.com/random/600x400?city" alt="City Life" class="portfolio-image">
+            <!-- Reflections -->
+            <div class="portfolio-item reflections">
+                <img src="images/gi1.jpg" alt="City Life" class="portfolio-image">
                 <div class="portfolio-content">
                     <h3>Urban Rhythms</h3>
                     <p>The colors, sounds, and pulse of the city through our poems and photos.</p>
-                    <span class="portfolio-date">2023. March</span>
+                    <span class="portfolio-date"><span class="by-author">G</span></span>
                 </div>
             </div>
             
-            <!-- Portfolio Item 4 -->
-            <div class="portfolio-item">
-                <img src="https://source.unsplash.com/random/600x400?abstract" alt="Abstract Art" class="portfolio-image">
+            <div class="portfolio-item reflections">
+                <img src="images/gi2.jpg" alt="Abstract Art" class="portfolio-image">
+                <div class="portfolio-content">
+                    <h3>World of Imagination</h3>
+                    <p>Vendégjáték a velencei San Marco téren</p>
+                    <span class="portfolio-date"><span class="by-author">G</span></span>
+                </div>
+            </div>
+
+            <div class="portfolio-item reflections">
+                <img src="images/gi3.jpg" alt="Abstract Art" class="portfolio-image">
                 <div class="portfolio-content">
                     <h3>World of Imagination</h3>
                     <p>Where abstract art and poetry meet, giving new meanings to forms and words.</p>
-                    <span class="portfolio-date">2023. February</span>
+                    <span class="portfolio-date"><span class="by-author">G</span></span>
                 </div>
             </div>
             
-            <!-- Portfolio Item 5 -->
-            <div class="portfolio-item">
-                <img src="https://source.unsplash.com/random/600x400?people" alt="Portraits" class="portfolio-image">
+            <!-- Nature -->
+            <div class="portfolio-item nature">
+                <img src="images/ginat1.jpg" alt="Portraits" class="portfolio-image">
                 <div class="portfolio-content">
                     <h3>Soul Portraits</h3>
                     <p>Capturing the stories and emotions hidden behind human faces.</p>
-                    <span class="portfolio-date">2023. January</span>
+                    <span class="portfolio-date"><span class="by-author">G</span></span>
                 </div>
             </div>
             
-            <!-- Portfolio Item 6 -->
-            <div class="portfolio-item">
-                <img src="https://source.unsplash.com/random/600x400?poetry" alt="Poetry" class="portfolio-image">
+            <div class="portfolio-item nature">
+                <img src="images/ginat2.jpg" alt="Poetry" class="portfolio-image">
                 <div class="portfolio-content">
                     <h3>Poems and Images</h3>
                     <p>The perfect harmony of poetry and photography, where words and images reinforce each other.</p>
-                    <span class="portfolio-date">2022. December</span>
+                    <span class="portfolio-date"><span class="by-author">G</span></span>
                 </div>
             </div>
         </div>
@@ -222,10 +122,71 @@
             <p>&copy; 2025 Gi Noa | All rights reserved</p>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all tab buttons and portfolio items
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            
+            // Function to filter items by category
+            function filterItems(category) {
+                portfolioItems.forEach(item => {
+                    // Add a small delay for the fade out effect
+                    item.classList.remove('visible');
+                    item.classList.add('hidden');
+                    
+                    // After the fade out, show the selected category
+                    setTimeout(() => {
+                        if (category === 'all' || item.classList.contains(category)) {
+                            item.classList.remove('hidden');
+                            // Small delay before adding visible class for the fade in effect
+                            setTimeout(() => item.classList.add('visible'), 10);
+                        } else {
+                            item.classList.add('hidden');
+                        }
+                    }, 200);
+                });
+            }
+            
+            // Add click event listeners to tab buttons
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Get the category to filter by
+                    const category = this.getAttribute('data-tab');
+                    
+                    // Filter items
+                    filterItems(category);
+                });
+            });
+            
+            // Show all items by default (or you can show the first tab)
+            if (tabButtons.length > 0) {
+                tabButtons[0].click();
+            }
+            
+            // Add smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
-
-
-
 
